@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "title": "Thiago Mota's Portfolio",
+    "description": "This is my portfolio website. Check out my projects and skills."
+  },
+  "navigation": {
+    "title": "Thiago Mota",
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "components": {
+    "underConstruction": {
+      "title": "Under Construction",
+      "description": "This page is currently under construction."
+    }
+  }
+}

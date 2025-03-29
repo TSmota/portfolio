@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "title": "Portfólio de Thiago Mota",
+    "description": "Este é o meu site de portfólio. Confira meus projetos e habilidades."
+  },
+  "navigation": {
+    "title": "Thiago Mota",
+    "home": "Início",
+    "about": "Sobre",
+    "projects": "Projetos",
+    "contact": "Contato"
+  },
+  "components": {
+    "underConstruction": {
+      "title": "Em Construção",
+      "description": "Esta página está atualmente em construção."
+    }
+  }
+}
