@@ -21,6 +21,8 @@ jobs:
           cache: "pnpm"
       - name: Install dependencies
         run: pnpm install
+      - name: Write CA cert
+        run: echo "${{ secrets.AIVEN_CA_CERT }}" > ca.pem
       - name: Push migrations
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
