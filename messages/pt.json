@@ -76,6 +76,22 @@
     "projects": "Projetos",
     "contact": "Contato"
   },
+  "projects": {
+    "title": "Projetos",
+    "subtitle": "Aqui estão alguns dos projetos em que trabalhei, demonstrando minhas habilidades e experiência.",
+    "ultimateTicTacToe": {
+      "name": "Ultimate Tic Tac Toe",
+      "description": "Uma reprodução do clássico jogo ultimate tic tac toe com funcionalidade multiplayer em tempo real usando WebSockets, suporte à internacionalização e alternância entre temas claro/escuro para uma experiência de usuário aprimorada."
+    },
+    "bytebank": {
+      "name": "Bytebank",
+      "description": "Uma aplicação de gestão financeira desenvolvida como desafio de pós-graduação em equipe. Inclui autenticação de usuários, armazenamento S3 para anexos de transações, gráficos para análise financeira, arquitetura de micro front-ends, design system personalizado documentado no Storybook, design responsivo para web e aplicativo mobile nativo planejado."
+    },
+    "portfolio": {
+      "name": "Portfólio Pessoal",
+      "description": "Um portfólio moderno e responsivo que apresenta meus projetos e habilidades. Possui internacionalização e um design inovador inspirado em IDE que reflete minha paixão por interfaces de usuário limpas e intuitivas."
+    }
+  },
   "ide": {
     "explorer": "Explorador",
     "ready": "Pronto",
