@@ -10,6 +10,12 @@ export const generateMetadata = async (): Promise<Metadata> => {
   return {
     title: t('title'),
     description: t('description'),
+    icons: {
+      icon: '/favicon.ico',
+      shortcut: '/apple-touch-icon.png',
+      apple: '/apple-touch-icon.png',
+    },
+    manifest: '/site.webmanifest',
   };
 }
 
