@@ -4,6 +4,7 @@ import { ThemeProvider } from "@/providers/theme-provider";
 import { NextIntlClientProvider } from "next-intl";
 import { StaticPageCommonProps } from "@/types/pages";
 import { IDELayout } from "@/components/ide-layout";
+import { Toaster } from "@/components/ui/sonner";
 
 interface LocaleLayoutProps extends StaticPageCommonProps {
   children: React.ReactNode;
@@ -31,6 +32,7 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
         <IDELayout>
           {children}
         </IDELayout>
+        <Toaster />
       </ThemeProvider>
     </NextIntlClientProvider>
     </body>

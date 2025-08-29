@@ -12,17 +12,10 @@
     "actions": {
       "viewCode": "View Code",
       "viewLive": "View Live",
-      "submit": "Send Message",
       "openMenu": "Open navigation menu"
     },
     "ui": {
       "totalProjects": "Total Projects"
-    }
-  },
-  "components": {
-    "underConstruction": {
-      "title": "This page is under construction",
-      "description": "Please check back later."
     }
   },
   "home": {
@@ -90,6 +83,40 @@
     "portfolio": {
       "name": "Personal Portfolio",
       "description": "A modern, responsive portfolio website showcasing my projects and skills. Features internationalization and an innovative IDE-inspired design that reflects my passion for clean, intuitive user interfaces."
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Let's get in touch! Feel free to reach out for any inquiries or collaboration opportunities.",
+    "info": {
+      "title": "Contact Information"
+    },
+    "email": {
+      "label": "Email"
+    },
+    "phone": {
+      "label": "Phone"
+    },
+    "location": {
+      "label": "Location",
+      "value": "São Paulo, SP, Brazil"
+    },
+    "social": {
+      "title": "Follow Me"
+    },
+    "form": {
+      "title": "Send a Message",
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": {
+        "button": "Send Message",
+        "success": "Message sent successfully!"
+      }
+    },
+    "footer": {
+      "message": "Feel free to reach out for collaborations, job opportunities, or just to say hello!"
     }
   },
   "ide": {

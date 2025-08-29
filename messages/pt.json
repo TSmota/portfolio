@@ -12,17 +12,10 @@
     "actions": {
       "viewCode": "Ver Código",
       "viewLive": "Ver Demo",
-      "submit": "Enviar Mensagem",
       "openMenu": "Abrir menu de navegação"
     },
     "ui": {
       "totalProjects": "Total de Projetos"
-    }
-  },
-  "components": {
-    "underConstruction": {
-      "title": "Esta página está em construção",
-      "description": "Por favor, verifique novamente mais tarde."
     }
   },
   "home": {
@@ -90,6 +83,40 @@
     "portfolio": {
       "name": "Portfólio Pessoal",
       "description": "Um portfólio moderno e responsivo que apresenta meus projetos e habilidades. Possui internacionalização e um design inovador inspirado em IDE que reflete minha paixão por interfaces de usuário limpas e intuitivas."
+    }
+  },
+  "contact": {
+    "title": "Contato",
+    "subtitle": "Vamos conversar! Sinta-se à vontade para entrar em contato para consultas ou oportunidades de colaboração.",
+    "info": {
+      "title": "Informações de Contato"
+    },
+    "email": {
+      "label": "Email"
+    },
+    "phone": {
+      "label": "Telefone"
+    },
+    "location": {
+      "label": "Localização",
+      "value": "São Paulo, SP, Brasil"
+    },
+    "social": {
+      "title": "Me Siga"
+    },
+    "form": {
+      "title": "Enviar uma Mensagem",
+      "name": "Nome",
+      "email": "Email",
+      "subject": "Assunto",
+      "message": "Mensagem",
+      "submit": {
+        "button": "Enviar Mensagem",
+        "success": "Mensagem enviada com sucesso!"
+      }
+    },
+    "footer": {
+      "message": "Sinta-se à vontade para entrar em contato para colaborações, oportunidades de trabalho ou apenas para dizer olá!"
     }
   },
   "ide": {
