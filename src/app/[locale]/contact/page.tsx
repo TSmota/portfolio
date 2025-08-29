@@ -1,6 +1,6 @@
 import { UnderConstruction } from "@/components/under-construction";
 
-export default function About() {
+export default function Projects() {
   return (
     <UnderConstruction/>
   );

@@ -3,7 +3,7 @@ import { ThemeProvider } from "@/providers/theme-provider";
 
 import { NextIntlClientProvider } from "next-intl";
 import { StaticPageCommonProps } from "@/types/pages";
-import { TabManager } from "@/components/tab-manager";
+import { IDELayout } from "@/components/ide-layout";
 
 interface LocaleLayoutProps extends StaticPageCommonProps {
   children: React.ReactNode;
@@ -24,12 +24,13 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
   return (
     <html lang={locale} suppressHydrationWarning>
     <body
-      className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
+      className={`${geistSans.variable} ${geistMono.variable} antialiased`}
     >
     <NextIntlClientProvider>
       <ThemeProvider attribute="class" defaultTheme="dark" disableTransitionOnChange>
-        <TabManager />
-        {children}
+        <IDELayout>
+          {children}
+        </IDELayout>
       </ThemeProvider>
     </NextIntlClientProvider>
     </body>

@@ -3,17 +3,95 @@
     "title": "Portfólio de Thiago Mota",
     "description": "Este é o meu site de portfólio. Confira meus projetos e habilidades."
   },
-  "navigation": {
-    "title": "Thiago Mota",
-    "home": "Início",
-    "about": "Sobre",
-    "projects": "Projetos",
-    "contact": "Contato"
+  "common": {
+    "status": {
+      "completed": "Concluído",
+      "inProgress": "Em Andamento",
+      "planned": "Planejado"
+    },
+    "actions": {
+      "viewCode": "Ver Código",
+      "viewLive": "Ver Demo",
+      "submit": "Enviar Mensagem",
+      "openMenu": "Abrir menu de navegação"
+    },
+    "ui": {
+      "totalProjects": "Total de Projetos"
+    }
   },
   "components": {
     "underConstruction": {
-      "title": "Em Construção",
-      "description": "Esta página está atualmente em construção."
+      "title": "Esta página está em construção",
+      "description": "Por favor, verifique novamente mais tarde."
+    }
+  },
+  "home": {
+    "introduction": "Olá, eu sou",
+    "jobTitle": "> Desenvolvedor de software",
+    "description": "Sou um engenheiro de software com paixão por tecnologia e inovação. Tenho experiência em várias linguagens de programação e frameworks, e adoro aprender coisas novas.",
+    "skills": {
+      "title": "Habilidades",
+      "languages": "Linguagens de Programação",
+      "frameworks": "Frameworks e Bibliotecas",
+      "tools": "Ferramentas e Tecnologias",
+      "databases": "Bancos de Dados"
+    },
+    "education": {
+      "title": "Educação",
+      "mackenzie": {
+        "degree": "Bacharelado em Sistemas de Informação",
+        "institution": "Universidade Presbiteriana Mackenzie",
+        "period": "Março de 2018 - Dezembro de 2021"
+      },
+      "fiap": {
+        "degree": "Pós-graduação em Engenharia Frontend",
+        "institution": "FIAP",
+        "period": "Março de 2025 - Dezembro de 2025"
+      }
+    },
+    "experience": {
+      "title": "Experiência Profissional",
+      "positions": {
+        "senior-software-developer": {
+          "title": "Desenvolvedor de Software Sênior",
+          "period": "Setembro de 2022 - Atual",
+          "description": "<ul><li>Desenvolvi um framework ReactJS utilizado em múltiplos projetos na Philips, com foco em performance e responsividade</li><li>Realizei manutenção e aprimoramentos em um editor Electron.js existente que integra com o framework, adicionando novas funcionalidades e melhorias</li><li>Desenvolvi componentes para o novo design system do EMR da Philips</li><li>Realizei revisões de código regulares para garantir altos padrões de qualidade e melhores práticas</li><li>Implementei testes e2e e unitários usando Playwright e Vitest/Jest</li><li>Suporte técnico e orientação a múltiplas equipes que no uso do framework</li></ul>"
+        },
+        "frontend-developer": {
+          "title": "Desenvolvedor Frontend", 
+          "period": "Novembro de 2020 - Setembro de 2022",
+          "description": "<ul><li>Desenvolvi múltiplas intranets e aplicações no SharePoint usando ReactJS e AngularJS</li><li>Criei uma biblioteca abrangente de componentes utilizada em múltiplos projetos da empresa</li><li>Melhorei a performance e escalabilidade de componentes existentes, alcançando 30% de redução nos tempos de carregamento</li><li>Realizei revisões de código regulares para manter padrões de qualidade</li><li>Mentorei 3 estagiários em processos da empresa, habilidades técnicas e melhores práticas</li><li>Atuei com sucesso como co-líder técnico, definindo arquitetura e estratégia de desenvolvimento para um formulário complexo de múltiplas partes (10+ abas, 60+ campos) em uma equipe de 3 desenvolvedores</li></ul>"
+        },
+        "frontend-intern": {
+          "title": "Estagiário Frontend",
+          "period": "Novembro de 2018 - Outubro de 2020",
+          "description": "<ul><li>Desenvolvi múltiplas intranets e aplicações no SharePoint usando ReactJS e AngularJS</li><li>Contribuí para o desenvolvimento de uma biblioteca de componentes reutilizáveis para projetos da empresa</li></ul>"
+        }
+      }
+    }
+  },
+  "navigation": {
+    "title": "Thiago Mota",
+    "about": "Sobre mim",
+    "projects": "Projetos",
+    "contact": "Contato"
+  },
+  "ide": {
+    "explorer": "Explorador",
+    "ready": "Pronto",
+    "statusBar": {
+      "line": "Linha 1, Coluna 1",
+      "language": "TypeScript React",
+      "encoding": "UTF-8"
+    },
+    "ariaLabels": {
+      "toggleSidebar": "Alternar barra lateral",
+      "closeSidebar": "Fechar barra lateral",
+      "closeTab": "Fechar aba",
+      "previousImage": "Imagem anterior",
+      "nextImage": "Próxima imagem",
+      "goToImage": "Ir para imagem {number}",
+      "projectScreenshot": "Screenshot do {projectName} {number}"
     }
   }
 }

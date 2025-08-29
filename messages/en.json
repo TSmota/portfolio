@@ -3,17 +3,95 @@
     "title": "Thiago Mota's Portfolio",
     "description": "This is my portfolio website. Check out my projects and skills."
   },
-  "navigation": {
-    "title": "Thiago Mota",
-    "home": "Home",
-    "about": "About",
-    "projects": "Projects",
-    "contact": "Contact"
+  "common": {
+    "status": {
+      "completed": "Completed",
+      "inProgress": "In Progress",
+      "planned": "Planned"
+    },
+    "actions": {
+      "viewCode": "View Code",
+      "viewLive": "View Live",
+      "submit": "Send Message",
+      "openMenu": "Open navigation menu"
+    },
+    "ui": {
+      "totalProjects": "Total Projects"
+    }
   },
   "components": {
     "underConstruction": {
-      "title": "Under Construction",
-      "description": "This page is currently under construction."
+      "title": "This page is under construction",
+      "description": "Please check back later."
+    }
+  },
+  "home": {
+    "introduction": "Hello world! I am",
+    "jobTitle": "> Software developer",
+    "description": "I am a software engineer with a passion for technology and innovation. I have experience in various programming languages and frameworks, and I love to learn new things.",
+    "skills": {
+      "title": "Skills",
+      "languages": "Programming Languages",
+      "frameworks": "Frameworks and Libraries",
+      "tools": "Tools and Technologies",
+      "databases": "Databases"
+    },
+    "education": {
+      "title": "Education",
+      "mackenzie": {
+        "degree": "Bachelor's degree in Information Systems",
+        "institution": "Mackenzie Presbyterian University",
+        "period": "March 2018 - December 2021"
+      },
+      "fiap": {
+        "degree": "Postgraduate degree in Frontend Engineering",
+        "institution": "FIAP",
+        "period": "March 2025 - December 2025"
+      }
+    },
+    "experience": {
+      "title": "Work Experience",
+      "positions": {
+        "senior-software-developer": {
+          "title": "Senior Software Developer",
+          "period": "September 2022 - Present",
+          "description": "<ul><li>Developed a ReactJS framework utilized across multiple projects at Philips, focusing on performance and responsiveness</li><li>Maintained and enhanced an existing Electron.js editor that integrates with the framework, adding new features and improvements</li><li>Created components for the new Philips EMR design system</li><li>Conducted regular code reviews to ensure high code quality standards and best practices</li><li>Implemented comprehensive e2e and unit tests using Playwright and Vitest/Jest</li><li>Provided technical support and guidance to multiple teams utilizing the framework</li></ul>"
+        },
+        "frontend-developer": {
+          "title": "Frontend Developer", 
+          "period": "November 2020 - September 2022",
+          "description": "<ul><li>Developed multiple intranets and applications in SharePoint using ReactJS and AngularJS</li><li>Built a comprehensive component library utilized across multiple company projects</li><li>Improved performance and scalability of existing components, achieving 30% faster load times</li><li>Conducted regular code reviews to maintain code quality standards</li><li>Mentored 3 interns on company processes, technical skills, and best practices</li><li>Successfully served as technical co-lead, defining architecture and development strategy for a complex multi-part form (10+ tabs, 60+ fields) within a 3-developer team</li></ul>"
+        },
+        "frontend-intern": {
+          "title": "Frontend Intern",
+          "period": "November 2018 - October 2020",
+          "description": "<ul><li>Developed multiple intranets and applications in SharePoint using ReactJS and AngularJS</li><li>Contributed to the development of a reusable component library for company-wide projects</li></ul>"
+        }
+      }
+    }
+  },
+  "navigation": {
+    "title": "Thiago Mota",
+    "about": "About me",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "ide": {
+    "explorer": "Explorer",
+    "ready": "Ready",
+    "statusBar": {
+      "line": "Line 1, Column 1",
+      "language": "TypeScript React",
+      "encoding": "UTF-8"
+    },
+    "ariaLabels": {
+      "toggleSidebar": "Toggle sidebar",
+      "closeSidebar": "Close sidebar",
+      "closeTab": "Close tab",
+      "previousImage": "Previous image",
+      "nextImage": "Next image",
+      "goToImage": "Go to image {number}",
+      "projectScreenshot": "{projectName} screenshot {number}"
     }
   }
 }
