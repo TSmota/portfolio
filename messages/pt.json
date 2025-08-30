@@ -21,7 +21,7 @@
   "home": {
     "introduction": "Olá, eu sou",
     "jobTitle": "> Desenvolvedor de software",
-    "description": "Sou um engenheiro de software com paixão por tecnologia e inovação. Tenho experiência em várias linguagens de programação e frameworks, e adoro aprender coisas novas.",
+    "description": "Tenho {years} anos de experiência em desenvolvimento de software, com foco em frontend.",
     "skills": {
       "title": "Habilidades",
       "languages": "Linguagens de Programação",

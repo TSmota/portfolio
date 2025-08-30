@@ -6,6 +6,10 @@ import { SkillCard } from "@/components/skill-card";
 import { ExperienceCard } from "@/components/experience-card";
 import { EducationCard } from "@/components/education-card";
 
+const startDate = new Date("2018-10-01").getTime();
+const currentDate = new Date().getTime();
+const years = Math.floor((currentDate - startDate) / (1000 * 60 * 60 * 24 * 365));
+
 export default async function Home() {
   const t = await getTranslations("home");
 
@@ -16,9 +20,10 @@ export default async function Home() {
 
         {/* Personal Info Section */}
         <div className="mb-6 sm:mb-8">
+          <p>{t('introduction')}</p>
           <h1 className="text-3xl sm:text-4xl font-bold mb-2">Thiago Mota</h1>
           <p className="text-lg sm:text-xl text-primary mb-3">{t('jobTitle')}</p>
-          <p className="text-muted-foreground leading-relaxed text-sm sm:text-base">{t('description')}</p>
+          <p className="text-muted-foreground leading-relaxed text-sm sm:text-base">{t('description', { years })}</p>
         </div>
 
         {/* Skills Section */}

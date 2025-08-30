@@ -21,7 +21,7 @@
   "home": {
     "introduction": "Hello world! I am",
     "jobTitle": "> Software developer",
-    "description": "I am a software engineer with a passion for technology and innovation. I have experience in various programming languages and frameworks, and I love to learn new things.",
+    "description": "I have {years} years of experience in software development, with a focus on frontend.",
     "skills": {
       "title": "Skills",
       "languages": "Programming Languages",

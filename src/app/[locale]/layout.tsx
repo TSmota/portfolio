@@ -24,18 +24,25 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
   const { locale } = await params;
   return (
     <html lang={locale} suppressHydrationWarning>
-    <body
-      className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-    >
-    <NextIntlClientProvider>
-      <ThemeProvider attribute="class" defaultTheme="dark" disableTransitionOnChange>
-        <IDELayout>
-          {children}
-        </IDELayout>
-        <Toaster />
-      </ThemeProvider>
-    </NextIntlClientProvider>
-    </body>
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+      </head>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        <NextIntlClientProvider>
+          <ThemeProvider attribute="class" defaultTheme="dark" disableTransitionOnChange>
+            <IDELayout>
+              {children}
+            </IDELayout>
+            <Toaster />
+          </ThemeProvider>
+        </NextIntlClientProvider>
+      </body>
     </html>
   );
 }
