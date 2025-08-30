@@ -22,7 +22,7 @@ interface ProjectCardProps {
 export function ProjectCard({ project }: ProjectCardProps) {
   return (
     <BaseCard padding="lg" hover>
-      <div className="flex justify-between items-start mb-4">
+      <div className="flex justify-between items-start mb-4 gap-2">
         <h3 className="text-xl font-semibold">{project.name}</h3>
         <StatusBadge status={project.status} />
       </div>

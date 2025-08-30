@@ -14,17 +14,22 @@ export const skills = {
     { name: 'Fastify' },
   ],
   databases: [
-    { name: 'Prisma' },
     { name: 'PostgreSQL' },
+    { name: 'Prisma' },
+    { name: 'Drizzle ORM' },
+    { name: 'Supabase' },
   ],
   tools: [
     { name: 'Docker' },
     { name: 'Git' },
     { name: 'GitHub' },
+    { name: 'GitHub Actions' },
     { name: 'Vercel' },
     { name: 'Vitest' },
     { name: 'Playwright' },
     { name: 'Jest' },
+    { name: 'ESLint' },
+    { name: 'Storybook' },
   ],
 } as const;
 

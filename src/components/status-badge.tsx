@@ -30,7 +30,7 @@ export function StatusBadge({ status, className = "" }: StatusBadgeProps) {
   const statusText = `${getStatusIcon(status)} ${t(`status.${status}`)}`;
   
   return (
-    <span className={`px-3 py-1 text-xs font-medium rounded-full ${statusStyles[status]} ${className}`}>
+    <span className={`px-3 py-1 text-xs font-medium rounded-full text-nowrap ${statusStyles[status]} ${className}`}>
       {statusText}
     </span>
   );

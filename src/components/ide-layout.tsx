@@ -62,7 +62,6 @@ export function IDELayout({ children }: IDELayoutProps) {
   }, [pathname, activeTab]);
 
   const handleTabClick = (path: string) => {
-    setActiveTab(path);
     if (path !== pathname) {
       router.push(path);
     }
@@ -80,7 +79,7 @@ export function IDELayout({ children }: IDELayoutProps) {
           sidebarOpen={sidebarOpen}
           setSidebarOpen={setSidebarOpen}
           pathname={pathname}
-          onFileClick={openTab}
+          onFileClick={handleTabClick}
         />
 
         {/* Main Content Area */}

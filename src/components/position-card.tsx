@@ -14,7 +14,7 @@ export function PositionCard({ position, index }: PositionCardProps) {
 
   return (
     <div className={`${index > 0 ? 'border-t pt-4' : ''}`}>
-      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-3">
+      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-3 gap-2">
         <div>
           <h4 className="text-lg font-semibold">
             {t(`experience.positions.${position.id}.title`)}

@@ -16,7 +16,7 @@ export function TitleBar({
       <div className="flex items-center gap-2">
         <button
           onClick={() => setSidebarOpen(!sidebarOpen)}
-          className="p-1 hover:bg-accent rounded mr-2 md:hidden"
+          className="p-1 cursor-pointer hover:bg-accent rounded mr-2 md:hidden"
           aria-label={tIde('ariaLabels.toggleSidebar')}
         >
           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
