@@ -137,6 +137,21 @@
       "language": "TypeScript React",
       "encoding": "UTF-8"
     },
+    "settings": {
+      "title": "Configurações",
+      "theme": {
+        "title": "Tema",
+        "light": "Claro",
+        "dark": "Escuro",
+        "system": "Sistema"
+      },
+      "language": {
+        "title": "Idioma",
+        "english": "Inglês",
+        "portuguese": "Português"
+      },
+      "footer": "Configurações da IDE - Versão 1.0.0"
+    },
     "ariaLabels": {
       "toggleSidebar": "Alternar barra lateral",
       "closeSidebar": "Fechar barra lateral",

@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import { Settings } from "./settings";
 
 interface TitleBarProps {
   sidebarOpen: boolean;
@@ -28,8 +29,9 @@ export function TitleBar({
         <div className="w-3 h-3 rounded-full bg-green-500"></div>
         <span className="ml-2 sm:ml-4 text-sm font-medium truncate">Thiago Mota - Portfolio</span>
       </div>
-      <div className="text-xs text-muted-foreground hidden sm:block">
-        {t('title')} IDE
+      <div className="text-xs text-muted-foreground flex items-center gap-4">
+        <span className="hidden sm:block">{t('title')} IDE</span>
+        <Settings />
       </div>
     </div>
   );
