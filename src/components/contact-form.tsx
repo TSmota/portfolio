@@ -39,7 +39,7 @@ export function ContactForm({ onSubmit }: ContactFormProps) {
       await onSubmit(data);
       form.reset();
       toast.success(t('submit.success'));
-    } catch (error) {
+    } catch {
       toast.error(t('submit.error'));
     }
   };

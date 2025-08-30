@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { TitleBar } from "./ide/title-bar";
 import { Sidebar } from "./ide/sidebar";
@@ -18,13 +18,13 @@ export function IDELayout({ children }: IDELayoutProps) {
   const [activeTab, setActiveTab] = useState(pathname);
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
-  const openTab = (path: string) => {
+  const openTab = useCallback((path: string) => {
     if (!openTabs.includes(path)) {
       setOpenTabs(prev => [...prev, path]);
     }
     
     setActiveTab(path);
-  };
+  }, [openTabs]);
 
   const closeTab = (path: string) => {
     const newTabs = openTabs.filter(tab => tab !== path);
@@ -59,7 +59,7 @@ export function IDELayout({ children }: IDELayoutProps) {
     if (pathname !== activeTab) {
       openTab(pathname);
     }
-  }, [pathname, activeTab]);
+  }, [pathname, activeTab, openTab]);
 
   const handleTabClick = (path: string) => {
     if (path !== pathname) {

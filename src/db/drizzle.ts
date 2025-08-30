@@ -16,7 +16,8 @@ if (process.env.AIVEN_CA_CERT_BASE64 && !existsSync(caPath)) {
   writeFileSync(caPath, ca);
 }
 
-// Append sslrootcert to connection string
-connectionString += `&sslrootcert=${caPath}`;
+if (process.env.AIVEN_CA_CERT_BASE64) {
+  connectionString += `&sslrootcert=${caPath}`;
+}
 
 export const db = drizzle(connectionString);
