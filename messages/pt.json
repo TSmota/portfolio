@@ -122,6 +122,15 @@
   "ide": {
     "explorer": "Explorador",
     "ready": "Pronto",
+    "loading": {
+      "title": "Carregando",
+      "compiling": "Compilando e empacotando recursos...",
+      "status": {
+        "transpiling": "Transpilando TypeScript",
+        "loadingComponents": "Carregando componentes",
+        "ready": "Pronto"
+      }
+    },
     "statusBar": {
       "line": "Linha 1, Coluna 1",
       "language": "TypeScript React",
