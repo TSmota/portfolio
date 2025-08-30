@@ -112,7 +112,8 @@
       "message": "Message",
       "submit": {
         "button": "Send Message",
-        "success": "Message sent successfully!"
+        "success": "Message sent successfully!",
+        "error": "Failed to send message. Please try again later."
       }
     },
     "footer": {

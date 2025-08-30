@@ -112,7 +112,8 @@
       "message": "Mensagem",
       "submit": {
         "button": "Enviar Mensagem",
-        "success": "Mensagem enviada com sucesso!"
+        "success": "Mensagem enviada com sucesso!",
+        "error": "Falha ao enviar mensagem. Por favor, tente novamente mais tarde."
       }
     },
     "footer": {

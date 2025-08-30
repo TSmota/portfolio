@@ -11,7 +11,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
 
 interface ContactFormProps {
-  onSubmit: (data: z.infer<typeof messageSchema>) => void;
+  onSubmit: (data: z.infer<typeof messageSchema>) => Promise<void>;
 }
 
 const messageSchema = z.object({
@@ -34,11 +34,14 @@ export function ContactForm({ onSubmit }: ContactFormProps) {
     }
   });
 
-  const handleSubmit = (data: z.infer<typeof messageSchema>) => {
-    onSubmit(data);
-    form.reset();
-
-    toast.success(t('submit.success'));
+  const handleSubmit = async (data: z.infer<typeof messageSchema>) => {
+    try {
+      await onSubmit(data);
+      form.reset();
+      toast.success(t('submit.success'));
+    } catch (error) {
+      toast.error(t('submit.error'));
+    }
   };
 
   return (
@@ -98,7 +101,7 @@ export function ContactForm({ onSubmit }: ContactFormProps) {
 
         <button
           type="submit"
-          className="w-full bg-primary text-primary-foreground py-3 px-6 rounded-lg hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 transition-colors font-medium"
+          className="w-full cursor-pointer bg-primary text-primary-foreground py-3 px-6 rounded-lg hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 transition-colors font-medium"
         >
           {t('submit.button')}
         </button>
