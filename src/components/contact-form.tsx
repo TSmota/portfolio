@@ -15,10 +15,10 @@ interface ContactFormProps {
 }
 
 const messageSchema = z.object({
-  name: z.string().min(1),
+  name: z.string().trim().nonempty(),
   email: z.email(),
-  subject: z.string().min(1),
-  message: z.string().min(1),
+  subject: z.string().trim().nonempty(),
+  message: z.string().trim().nonempty(),
 });
 
 export function ContactForm({ onSubmit }: ContactFormProps) {

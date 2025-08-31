@@ -5,7 +5,6 @@ import { PageHeader } from "@/components/page-header";
 import { SectionHeader } from "@/components/section-header";
 import { ContactInfoCard } from "@/components/contact-info-card";
 import { SocialLink } from "@/components/social-link";
-import { BaseCard } from "@/components/base-card";
 import { ContactForm } from "@/components/contact-form";
 
 import { sendMessage } from "./actions";
@@ -78,16 +77,6 @@ export default async function Contact() {
             <SectionHeader icon="📝" title={t('form.title')} />
 
             <ContactForm onSubmit={sendMessage} />
-
-            {/* Contact Info Footer */}
-            <BaseCard className="mt-8">
-              <div className="flex items-start gap-3">
-                <span className="text-xl">💡</span>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  {t('footer.message')}
-                </p>
-              </div>
-            </BaseCard>
           </div>
         </div>
       </div>
