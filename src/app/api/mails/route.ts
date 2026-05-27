@@ -2,26 +2,20 @@ import { db } from "@/db/drizzle";
 import { messages } from "@/db/schema";
 import { eq, inArray } from "drizzle-orm";
 import { NextResponse } from "next/server";
-import nodemailer from "nodemailer";
 
-const transporter = nodemailer.createTransport({
-  host: process.env.SMTP_HOST,
-  port: Number(process.env.SMTP_PORT),
-  auth: {
-    user: process.env.SMTP_USER,
-    pass: process.env.SMTP_PASSWORD!,
-  },
+import { MailerSend, EmailParams, Sender, Recipient } from "mailersend";
+
+const mailerSend = new MailerSend({
+  apiKey: process.env.SMTP_API_TOKEN!,
 });
 
-const MAIL_TEMPLATE = `
-  New message from {{name}}
-  Email: {{email}}
-  Message: {{message}}
-`;
+const recipient = new Recipient(process.env.PERSONAL_EMAIL!);
+
+const sentFrom = new Sender(process.env.SMTP_USER!);
 
 export async function GET() {
   const mails = await db.select().from(messages).where(eq(messages.sent, false));
-  
+
   if (mails.length === 0) {
     return NextResponse.json({ message: "No mails to send" });
   }
@@ -29,16 +23,27 @@ export async function GET() {
   const sentMails = [];
 
   for (const mail of mails) {
+    const personalization = [
+      {
+        email: recipient.email,
+        data: {
+          email: mail.email,
+          message: mail.message,
+          name: mail.name,
+          subject: mail.subject,
+        },
+      }
+    ];
+
     try {
-      await transporter.sendMail({
-        from: process.env.SMTP_USER,
-        to: process.env.PERSONAL_EMAIL,
-        subject: `New message from ${mail.name} - ${mail.subject}`,
-        text: MAIL_TEMPLATE
-          .replace("{{name}}", mail.name)
-          .replace("{{email}}", mail.email)
-          .replace("{{message}}", mail.message),
-      });
+      const emailParams = new EmailParams()
+        .setFrom(sentFrom)
+        .setTo([recipient])
+        .setSubject(mail.subject)
+        .setTemplateId('pr9084znvqm4w63d')
+        .setPersonalization(personalization);
+
+      await mailerSend.email.send(emailParams);
 
       sentMails.push(mail.id);
     } catch (error) {
