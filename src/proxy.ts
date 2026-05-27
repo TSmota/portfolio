@@ -2,7 +2,7 @@ import createMiddleware from 'next-intl/middleware';
 import {NextRequest} from "next/server";
 import {supportedLocales} from "@/i18n/request";
 
-export default function middleware(request: NextRequest) {
+export default function proxy(request: NextRequest) {
   const userLanguage = request.headers
     .get("accept-language")
     ?.split(",")[0]
