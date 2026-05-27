@@ -1,7 +1,7 @@
 "use client";
 
 import { SettingsIcon, Sun, Moon, Monitor, Globe } from 'lucide-react';
-import { useTheme } from 'next-themes';
+import { useTheme } from '@teispace/next-themes';
 import { useLocale, useTranslations } from 'next-intl';
 
 import { usePathname, useRouter } from '@/i18n/navigation';
