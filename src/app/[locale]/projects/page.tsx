@@ -24,7 +24,7 @@ export default async function Projects() {
       name: t('bytebank.name'),
       description: t('bytebank.description'),
       technologies: ['Next.js', 'React', 'TypeScript', 'TailwindCSS', 'Supabase', 'PostgreSQL', 'Storybook', 'Turbo Repo', 'Docker'],
-      status: 'inProgress',
+      status: 'completed',
       githubUrl: 'https://github.com/thegfmachado/fiap-tech-challenge',
       liveUrl: 'https://fiap-tech-challenge-bytebank-web.vercel.app/',
       images: ['/images/bytebank-home.png', '/images/bytebank-login.png', '/images/bytebank-dashboard.png']
