@@ -51,7 +51,7 @@
           "description": "<ul><li>Desenvolvi um framework ReactJS utilizado em múltiplos projetos na Philips, com foco em performance e responsividade</li><li>Realizei manutenção e aprimoramentos em um editor Electron.js existente que integra com o framework, adicionando novas funcionalidades e melhorias</li><li>Desenvolvi componentes para o novo design system do EMR da Philips</li><li>Realizei revisões de código regulares para garantir altos padrões de qualidade e melhores práticas</li><li>Implementei testes e2e e unitários usando Playwright e Vitest/Jest</li><li>Suporte técnico e orientação a múltiplas equipes que no uso do framework</li></ul>"
         },
         "frontend-developer": {
-          "title": "Desenvolvedor Frontend", 
+          "title": "Desenvolvedor Frontend",
           "period": "Novembro de 2020 - Setembro de 2022",
           "description": "<ul><li>Desenvolvi múltiplas intranets e aplicações no SharePoint usando ReactJS e AngularJS</li><li>Criei uma biblioteca abrangente de componentes utilizada em múltiplos projetos da empresa</li><li>Melhorei a performance e escalabilidade de componentes existentes, alcançando 30% de redução nos tempos de carregamento</li><li>Realizei revisões de código regulares para manter padrões de qualidade</li><li>Mentorei 3 estagiários em processos da empresa, habilidades técnicas e melhores práticas</li><li>Atuei com sucesso como co-líder técnico, definindo arquitetura e estratégia de desenvolvimento para um formulário complexo de múltiplas partes (10+ abas, 60+ campos) em uma equipe de 3 desenvolvedores</li></ul>"
         },
@@ -83,6 +83,10 @@
     "portfolio": {
       "name": "Portfólio Pessoal",
       "description": "Um portfólio moderno e responsivo que apresenta meus projetos e habilidades. Possui internacionalização e um design inovador inspirado em IDE que reflete minha paixão por interfaces de usuário limpas e intuitivas."
+    },
+    "tms-finance": {
+      "name": "TMS Finance",
+      "description": "Uma aplicação completa de gestão financeira pessoal com contas e carteiras multi-moeda, controle de faturas de cartão de crédito com parcelamento, projeção de gastos recorrentes, controle de empréstimos entre pessoas, transferências internas, metas de economia, pagamentos em lote, dashboard consolidado e superfície de agente IA via Model Context Protocol (MCP)."
     }
   },
   "contact": {
