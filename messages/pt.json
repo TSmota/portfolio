@@ -72,7 +72,7 @@
   "projects": {
     "title": "Projetos",
     "subtitle": "Aqui estão alguns dos projetos em que trabalhei, demonstrando minhas habilidades e experiência.",
-    "ultimateTicTacToe": {
+    "ultimate-tic-tac-toe": {
       "name": "Ultimate Tic Tac Toe",
       "description": "Uma reprodução do clássico jogo ultimate tic tac toe com funcionalidade multiplayer em tempo real usando WebSockets, suporte à internacionalização e alternância entre temas claro/escuro para uma experiência de usuário aprimorada."
     },

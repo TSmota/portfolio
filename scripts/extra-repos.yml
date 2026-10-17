@@ -1,0 +1,45 @@
+# Extra repos to scan for portfolio projects.
+# Use this for repos you don't own or that don't have a .portfolio.yml file.
+#
+# If the external repo has its own .portfolio.yml, the script will use that
+# config automatically. Otherwise, the inline config below is used.
+
+projects:
+  - id: bytebank
+    repo: thegfmachado/fiap-tech-challenge
+    order: 2
+    status: completed
+    technologies:
+      - Next.js
+      - React
+      - TypeScript
+      - TailwindCSS
+      - Supabase
+      - PostgreSQL
+      - Storybook
+      - Turbo Repo
+      - Docker
+    liveUrl: https://fiap-tech-challenge-bytebank-web.vercel.app/
+    i18n:
+      en:
+        name: Bytebank
+        description: >-
+          A financial management application developed as a postgraduate team
+          challenge. Features include user authentication, S3 storage for
+          transaction attachments, graphs for financial analysis, micro
+          front-end architecture, custom design system documented in Storybook,
+          responsive web design, and a planned native mobile app.
+      pt:
+        name: Bytebank
+        description: >-
+          Uma aplicação de gestão financeira desenvolvida como desafio de
+          pós-graduação em equipe. Inclui autenticação de usuários,
+          armazenamento S3 para anexos de transações, gráficos para análise
+          financeira, arquitetura de micro front-ends, design system
+          personalizado documentado no Storybook, design responsivo para web
+          e aplicativo mobile nativo planejado.
+    # Images already exist in public/images/ — no "source" means skip download
+    images:
+      - name: bytebank-home.png
+      - name: bytebank-login.png
+      - name: bytebank-dashboard.png

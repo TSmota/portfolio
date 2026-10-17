@@ -1,0 +1,27 @@
+[
+  {
+    "id": "ultimate-tic-tac-toe",
+    "order": 1,
+    "status": "completed",
+    "technologies": ["Next.js", "React", "TypeScript", "Fastify", "TailwindCSS", "shadcn/ui", "next-intl", "Turbo Repo"],
+    "githubUrl": "https://github.com/TSmota/ultimate-tic-tac-toe",
+    "liveUrl": "https://tic-tac-toe.thiagoms.dev/",
+    "images": ["/images/tic-tac-toe.png"]
+  },
+  {
+    "id": "bytebank",
+    "order": 2,
+    "status": "completed",
+    "technologies": ["Next.js", "React", "TypeScript", "TailwindCSS", "Supabase", "PostgreSQL", "Storybook", "Turbo Repo", "Docker"],
+    "githubUrl": "https://github.com/thegfmachado/fiap-tech-challenge",
+    "liveUrl": "https://fiap-tech-challenge-bytebank-web.vercel.app/",
+    "images": ["/images/bytebank-home.png", "/images/bytebank-login.png", "/images/bytebank-dashboard.png"]
+  },
+  {
+    "id": "portfolio",
+    "order": 3,
+    "status": "completed",
+    "technologies": ["Next.js", "React", "TypeScript", "TailwindCSS", "shadcn/ui", "next-intl"],
+    "githubUrl": "https://github.com/TSmota/portfolio"
+  }
+]
