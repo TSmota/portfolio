@@ -3,41 +3,21 @@ import { FileCommentHeader } from "@/components/file-comment-header";
 import { PageHeader } from "@/components/page-header";
 import { StatCard } from "@/components/stat-card";
 import { ProjectCard, Project } from "@/components/project-card";
+import projectsData from "@/data/projects.json";
 
 export default async function Projects() {
   const t = await getTranslations("projects");
   const tCommon = await getTranslations("common");
+  const translateProject = t as unknown as (key: string) => string;
 
-  const projects: Project[] = [
-    {
-      id: 'ultimate-tic-tac-toe',
-      name: t('ultimateTicTacToe.name'),
-      description: t('ultimateTicTacToe.description'),
-      technologies: ['Next.js', 'React', 'TypeScript', 'Fastify', 'TailwindCSS', 'shadcn/ui', 'next-intl', 'Turbo Repo'],
-      status: 'completed',
-      githubUrl: 'https://github.com/TSmota/ultimate-tic-tac-toe',
-      liveUrl: 'https://tic-tac-toe.thiagoms.dev/',
-      images: ['/images/tic-tac-toe.png']
-    },
-    {
-      id: 'bytebank',
-      name: t('bytebank.name'),
-      description: t('bytebank.description'),
-      technologies: ['Next.js', 'React', 'TypeScript', 'TailwindCSS', 'Supabase', 'PostgreSQL', 'Storybook', 'Turbo Repo', 'Docker'],
-      status: 'completed',
-      githubUrl: 'https://github.com/thegfmachado/fiap-tech-challenge',
-      liveUrl: 'https://fiap-tech-challenge-bytebank-web.vercel.app/',
-      images: ['/images/bytebank-home.png', '/images/bytebank-login.png', '/images/bytebank-dashboard.png']
-    },
-    {
-      id: 'portfolio',
-      name: t('portfolio.name'),
-      description: t('portfolio.description'),
-      technologies: ['Next.js', 'React', 'TypeScript', 'TailwindCSS', 'shadcn/ui', 'next-intl'],
-      status: 'completed',
-      githubUrl: 'https://github.com/TSmota/portfolio',
-    }
-  ];
+  const projects: Project[] = [...projectsData]
+    .sort((a, b) => a.order - b.order)
+    .map(({ order, ...p }) => ({
+      ...p,
+      name: translateProject(`${p.id}.name`),
+      description: translateProject(`${p.id}.description`),
+      status: p.status as Project['status'],
+    }));
 
   return (
     <main className="h-full bg-background text-foreground overflow-auto">

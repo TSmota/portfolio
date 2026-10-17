@@ -7,6 +7,7 @@
     "build": "drizzle-kit migrate && next build",
     "start": "next start",
     "lint": "next lint",
+    "sync:projects": "node scripts/sync-projects.mjs",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
     "db:migrate:push": "drizzle-kit push",
@@ -45,6 +46,7 @@
     "drizzle-kit": "0.31.10",
     "eslint": "9.34.0",
     "eslint-config-next": "15.5.2",
+    "js-yaml": "4.1.0",
     "tailwindcss": "4.3.0",
     "typescript": "5.8.3"
   }
