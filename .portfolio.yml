@@ -1,0 +1,25 @@
+portfolio:
+  id: portfolio
+  order: 3
+  status: completed
+  technologies:
+    - Next.js
+    - React
+    - TypeScript
+    - TailwindCSS
+    - shadcn/ui
+    - next-intl
+  i18n:
+    en:
+      name: Personal Portfolio
+      description: >-
+        A modern, responsive portfolio website showcasing my projects and
+        skills. Features internationalization and an innovative IDE-inspired
+        design that reflects my passion for clean, intuitive user interfaces.
+    pt:
+      name: Portfólio Pessoal
+      description: >-
+        Um portfólio moderno e responsivo que apresenta meus projetos e
+        habilidades. Possui internacionalização e um design inovador
+        inspirado em IDE que reflete minha paixão por interfaces de usuário
+        limpas e intuitivas.
